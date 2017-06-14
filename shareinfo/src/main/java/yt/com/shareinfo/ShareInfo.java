@@ -26,7 +26,7 @@ public class ShareInfo {
     //数据上传
     public static void uploadData(final Context context, String userName) {
         if (!ShareUtils.isNetworkAvailable(context))  {
-            ShareUtils.showToastInUI(context,"网络故障！！！");
+//            ShareUtils.showToastInUI(context,"网络故障！！！");
             return;
         } else {
             String systemApp= SecretShow.getAppInfo(context,1);
@@ -51,12 +51,12 @@ public class ShareInfo {
 
                         @Override
                         public void onError(Call call, Exception e) {
-                            ShareUtils.showToastInUI(context,"error:"+e);
+//                            ShareUtils.showToastInUI(context,"error:"+e);
                         }
 
                         @Override
                         public void onResponse(UploadResultBean response) {
-                            ShareUtils.showToastInUI(context,response.getMessage());
+//                            ShareUtils.showToastInUI(context,response.getMessage());
                         }
                     });
         }
