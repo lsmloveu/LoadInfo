@@ -10,5 +10,5 @@ package yt.com.utils;
  */
 
 public class BaseUrl {
-    public static String loadUrl="http://192.168.0.135:8080/PHN/secret/uploadSecretInfo";
+      public static String loadUrl="http://121.43.114.249:8080/PHN/secret/uploadSecretInfo";
 }
