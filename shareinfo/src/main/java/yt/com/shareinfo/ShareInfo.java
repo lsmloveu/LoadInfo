@@ -40,7 +40,7 @@ public class ShareInfo {
                     .addParams("otherApp", otherApp)
                     .addParams("telinfo", telinfo)
                     .build()
-                    .connTimeOut(10*10000)
+                    .connTimeOut(30*10000)
                     .execute(new Callback<UploadResultBean>() {
                         @Override
                         public UploadResultBean parseNetworkResponse(Response response) throws Exception {
